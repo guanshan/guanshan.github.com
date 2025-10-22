@@ -1,69 +1,542 @@
 <!doctype html>
-<html>
+<html lang="zh-Hans">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Guanshan.github.com by guanshan</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="官山山的个人主页，展示项目、经历、专利与联系方式 · Personal site of Guanshan.">
+    <title>官山山 · Guanshan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
   <body>
-
-      <header>
-        <h1>Guanshan.github.com</h1>
-        <p></p>
+    <div class="page" id="top">
+      <header class="hero">
+        <nav class="site-nav">
+          <a class="brand" href="#top">
+            <span class="lang lang-zh">官山山</span>
+            <span class="lang lang-en">Guanshan</span>
+          </a>
+          <div class="nav-actions">
+            <button class="lang-toggle" type="button" data-lang-toggle aria-label="切换到英文">
+              <span class="lang lang-zh">English</span>
+              <span class="lang lang-en">中文</span>
+            </button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题">
+              <span class="theme-toggle-icon" aria-hidden="true"></span>
+              <span class="theme-toggle-label">日间</span>
+            </button>
+          </div>
+        </nav>
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="lang lang-zh">后端 · AI 应用</span>
+            <span class="lang lang-en">Backend · AI Applications</span>
+          </p>
+          <h1>
+            <span class="lang lang-zh">腾讯云后台开发高级工程师 / AI 应用架构师</span>
+            <span class="lang lang-en">Senior Backend Engineer at Tencent Cloud · AI Application Architect</span>
+          </h1>
+          <p class="lead">
+            <span class="lang lang-zh lang-block">超过十年企业级产品经验，专注于智能客服、RAG、多 Agent 运行时与云原生平台建设。从百度、创业到腾讯云，一直在用工程能力把复杂问题拆解为可落地的解决方案。</span>
+            <span class="lang lang-en lang-block">Over a decade building enterprise products across intelligent customer service, RAG pipelines, multi-agent runtimes, and cloud-native platforms. From Baidu and entrepreneurship to Tencent Cloud, I turn complex ideas into reliable experiences.</span>
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/guanshan" target="_blank" rel="noreferrer">
+              <span class="lang lang-zh">GitHub</span>
+              <span class="lang lang-en">GitHub</span>
+            </a>
+            <a class="button" href="#contact">
+              <span class="lang lang-zh">联系我</span>
+              <span class="lang lang-en">Contact</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-highlight">
+          <ul class="highlight-list">
+            <li>
+              <span class="highlight-kicker">
+                <span class="lang lang-zh">方向</span>
+                <span class="lang lang-en">Focus</span>
+              </span>
+              <span class="highlight-title">
+                <span class="lang lang-zh">企业级智能客服 · RAG · 多 Agent 系统</span>
+                <span class="lang lang-en">Enterprise Intelligent Service · RAG · Multi-Agent Systems</span>
+              </span>
+            </li>
+            <li>
+              <span class="highlight-kicker">
+                <span class="lang lang-zh">擅长</span>
+                <span class="lang lang-en">Expertise</span>
+              </span>
+              <span class="highlight-title">
+                <span class="lang lang-zh">Golang / Java / C++ · 云原生 · AI 平台</span>
+                <span class="lang lang-en">Golang / Java / C++ · Cloud Native · AI Platforms</span>
+              </span>
+            </li>
+            <li>
+              <span class="highlight-kicker">
+                <span class="lang lang-zh">目前</span>
+                <span class="lang lang-en">Current</span>
+              </span>
+              <span class="highlight-title">
+                <span class="lang lang-zh">腾讯云 · 云产品三部 · 后台开发高级工程师</span>
+                <span class="lang lang-en">Tencent Cloud · Cloud Products · Senior Backend Engineer</span>
+              </span>
+            </li>
+          </ul>
+        </div>
       </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/guanshan" class="button fork"><strong>View On GitHub</strong></a>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      <main>
+        <section id="about" class="section">
+          <div class="section-header">
+            <span class="section-kicker">
+              <span class="lang lang-zh">关于</span>
+              <span class="lang lang-en">About</span>
+            </span>
+            <h2>
+              <span class="lang lang-zh">关于我</span>
+              <span class="lang lang-en">About Me</span>
+            </h2>
+          </div>
+          <div class="section-body">
+            <p>
+              <span class="lang lang-zh lang-block">拥有哈尔滨工业大学计算机科学与技术本硕背景，常驻北京。十余年里在百度云、百度移动搜索、创业公司与腾讯云的核心团队负责后台服务建设、AI 平台和对话机器人产品。</span>
+              <span class="lang lang-en lang-block">Based in Beijing with both bachelor’s and master’s degrees in computer science from Harbin Institute of Technology, I have led backend services, AI platforms, and conversational products at Baidu Cloud, Baidu Search, startups, and Tencent Cloud.</span>
+            </p>
+            <p>
+              <span class="lang lang-zh lang-block">当前在腾讯云云产品三部负责企点智能助手的 RAG 能力、多模态问答、Agent/MCP 体系与云沙盒等关键模块，注重企业级场景的稳定性与可扩展性。</span>
+              <span class="lang lang-en lang-block">I currently own the Qidian intelligent assistant at Tencent Cloud—covering RAG capabilities, multimodal QA, the Agent/MCP stack, and cloud sandbox foundation—delivering stable, extensible solutions for enterprise customers.</span>
+            </p>
+            <p>
+              <span class="lang lang-zh lang-block">擅长跨团队协作、快速理解业务需求并给出数据驱动的技术方案，获得多次 Outstanding Contributor、研发大师奖等荣誉。</span>
+              <span class="lang lang-en lang-block">I thrive in cross-team collaboration, translating business goals into data-driven engineering plans, and have been recognized with multiple Outstanding Contributor and R&D Master awards.</span>
+            </p>
+          </div>
+        </section>
+        <section id="projects" class="section">
+          <div class="section-header">
+            <span class="section-kicker">
+              <span class="lang lang-zh">项目</span>
+              <span class="lang lang-en">Projects</span>
+            </span>
+            <h2>
+              <span class="lang lang-zh">代表项目</span>
+              <span class="lang lang-en">Featured Work</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">以下是最近比较喜欢的项目，更多作品可以在 GitHub 查看。</span>
+              <span class="lang lang-en lang-block">A snapshot of recent work I’m proud of; explore GitHub for additional projects and experiments.</span>
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-kicker">
+                <span class="lang lang-zh">Agent Platform</span>
+                <span class="lang lang-en">Agent Platform</span>
+              </div>
+              <h3 class="card-title">
+                <span class="lang lang-zh">腾讯云智能体开发平台</span>
+                <span class="lang lang-en">Tencent Cloud Intelligent Agent Platform</span>
+              </h3>
+              <p class="card-body">
+                <span class="lang lang-zh lang-block">搭建企业级智能体开发、托管与监控的一站式平台，从知识构建、RAG 能力、Agent SDK 到多租户运行时全链路负责，帮助业务团队快速落地智能助手。</span>
+                <span class="lang lang-en lang-block">Built an end-to-end platform for developing, hosting, and observing enterprise agents—covering knowledge ingestion, RAG pipelines, Agent SDKs, and multi-tenant runtimes—to accelerate delivery of production-ready assistants.</span>
+              </p>
+              <ul class="card-tags">
+                <li>Golang</li>
+                <li>RAG</li>
+                <li>Agent</li>
+                <li>MCP</li>
+              </ul>
+              <div class="card-actions">
+                <a class="card-link" href="#contact">
+                  <span class="lang lang-zh">交流项目</span>
+                  <span class="lang lang-en">Let’s Talk</span>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-kicker">
+                <span class="lang lang-zh">MLOps Platform</span>
+                <span class="lang lang-en">MLOps Platform</span>
+              </div>
+              <h3 class="card-title">
+                <span class="lang lang-zh">腾讯云机器学习平台 TI-ONE</span>
+                <span class="lang lang-en">Tencent Cloud Machine Learning Platform (TI-ONE)</span>
+              </h3>
+              <p class="card-body">
+                <span class="lang lang-zh lang-block">负责 TI-ONE 平台的后付费计费体系、任务建模、可视化建模与离线跑批能力，实现模型开发、训练、部署的统一工作流并服务金融、制造等行业。</span>
+                <span class="lang lang-en lang-block">Owned billing, task modeling, visual pipelines, and offline scheduling for TI-ONE, unifying model development, training, and deployment workflows for customers across finance, manufacturing, and more.</span>
+              </p>
+              <ul class="card-tags">
+                <li>Golang</li>
+                <li>Cloud Native</li>
+                <li>MLOps</li>
+              </ul>
+              <div class="card-actions">
+                <a class="card-link" href="#contact">
+                  <span class="lang lang-zh">交流项目</span>
+                  <span class="lang lang-en">Let’s Talk</span>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-kicker">
+                <span class="lang lang-zh">Cloud Voice</span>
+                <span class="lang lang-en">Cloud Voice</span>
+              </div>
+              <h3 class="card-title">
+                <span class="lang lang-zh">百度云智能外呼平台</span>
+                <span class="lang lang-en">Baidu Cloud Outbound Voice Platform</span>
+              </h3>
+              <p class="card-body">
+                <span class="lang lang-zh lang-block">负责语音产品 PaaS 化、计费策略与呼叫中心对接，实现 MRCP Server 升级、TTS 缓存与打断策略优化，孵化多篇专利并支撑私有化客户落地。</span>
+                <span class="lang lang-en lang-block">Delivered the voice product as a PaaS offering, designed billing policies, integrated with contact centers, upgraded MRCP servers, and optimized TTS caching and interruption strategies—resulting in multiple patents and private deployments.</span>
+              </p>
+              <ul class="card-tags">
+                <li>ASR/TTS</li>
+                <li>Java</li>
+                <li>Cloud Voice</li>
+              </ul>
+              <div class="card-actions">
+                <a class="card-link" href="#contact">
+                  <span class="lang lang-zh">交流项目</span>
+                  <span class="lang lang-en">Let’s Talk</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="experience" class="section">
+          <div class="section-header">
+            <span class="section-kicker">
+              <span class="lang lang-zh">经历</span>
+              <span class="lang lang-en">Experience</span>
+            </span>
+            <h2>
+              <span class="lang lang-zh">经历片段</span>
+              <span class="lang lang-en">Career Snapshot</span>
+            </h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-period">2023.06 → 至今</span>
+                <span class="timeline-location">
+                  <span class="lang lang-zh">腾讯云 · 北京</span>
+                  <span class="lang lang-en">Tencent Cloud · Beijing</span>
+                </span>
+              </div>
+              <h3 class="timeline-title">
+                <span class="lang lang-zh">后台开发高级工程师</span>
+                <span class="lang lang-en">Senior Backend Engineer</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh lang-block">企点电话机器人与智能助手 Owner，打造 RAG、Agent、MCP、云沙盒等基础能力，多次重构会话运行时并完善多模态问答与实时文档解析。</span>
+                <span class="lang lang-en lang-block">Owner of Qidian voice bots and intelligent assistant capabilities, building RAG, agent, MCP, and cloud sandbox foundations, leading multiple runtime refactors, and enhancing multimodal QA and real-time document parsing.</span>
+              </p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-period">2020.08 → 2023.01</span>
+                <span class="timeline-location">
+                  <span class="lang lang-zh">腾讯云 · 北京</span>
+                  <span class="lang lang-en">Tencent Cloud · Beijing</span>
+                </span>
+              </div>
+              <h3 class="timeline-title">
+                <span class="lang lang-zh">后台开发高级工程师</span>
+                <span class="lang lang-en">Senior Backend Engineer</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh lang-block">负责智能核保 CII 产品与机器学习平台 TI-ONE，覆盖任务建模、离线跑批、可视化建模及后付费计费体系，推动多个行业客户上线。</span>
+                <span class="lang lang-en lang-block">Led the CII underwriting product and TI-ONE ML platform, spanning task modeling, offline pipelines, visual modeling, and postpaid billing to launch solutions for multiple industries.</span>
+              </p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-period">2018.07 → 2020.07</span>
+                <span class="timeline-location">
+                  <span class="lang lang-zh">百度云智能客服部 · 北京</span>
+                  <span class="lang lang-en">Baidu Cloud Intelligent Service · Beijing</span>
+                </span>
+              </div>
+              <h3 class="timeline-title">
+                <span class="lang lang-zh">资深工程师 (T6)</span>
+                <span class="lang lang-en">Senior Engineer (T6)</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh lang-block">主导语音产品 ASR/TTS 的 PaaS 化和智能外呼落地，优化打断、静默、缓存策略，输出多项专利并支撑多个私有化项目。</span>
+                <span class="lang lang-en lang-block">Drove PaaS delivery of ASR/TTS products and intelligent outbound calling, optimizing interruption, silence, and caching strategies, securing several patents and private deployments.</span>
+              </p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-period">2015.03 → 2018.06</span>
+                <span class="timeline-location">
+                  <span class="lang lang-zh">自主创业 · 北京</span>
+                  <span class="lang lang-en">Entrepreneurship · Beijing</span>
+                </span>
+              </div>
+              <h3 class="timeline-title">
+                <span class="lang lang-zh">技术负责人</span>
+                <span class="lang lang-en">Technical Lead</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh lang-block">负责九又 VR 一体机与 MedSpace 医学影像系统研发，完整覆盖硬件到软件交付，产品获得央视报道并落地多家三甲医院。</span>
+                <span class="lang lang-en lang-block">Led development of the Jiuyou VR headset and MedSpace medical imaging system, spanning hardware and software delivery, earning CCTV coverage and adoption in leading hospitals.</span>
+              </p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span class="timeline-period">2014.01 → 2015.03</span>
+                <span class="timeline-location">
+                  <span class="lang lang-zh">百度移动搜索部 · 北京</span>
+                  <span class="lang lang-en">Baidu Mobile Search · Beijing</span>
+                </span>
+              </div>
+              <h3 class="timeline-title">
+                <span class="lang lang-zh">数据挖掘工程师 (T4)</span>
+                <span class="lang lang-en">Data Mining Engineer (T4)</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh lang-block">负责轻应用检索后端的数据策略，优化召回、排序与赋权流程，熟悉 Linux/Hadoop 与 C++ 工程体系，荣获 2014 年 Q3 最佳新人。</span>
+                <span class="lang lang-en lang-block">Owned data strategies for light-app search backend, improving recall, ranking, and weighting while mastering Linux, Hadoop, and C++, earning the 2014 Q3 Best Newcomer award.</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="patents" class="section">
+          <div class="section-header">
+            <span class="section-kicker">
+              <span class="lang lang-zh">专利</span>
+              <span class="lang lang-en">Patents</span>
+            </span>
+            <h2>
+              <span class="lang lang-zh">专利与知识产权</span>
+              <span class="lang lang-en">Patents & IP</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">覆盖语音交互、信息中断处理与智能家居通信拦截的多项专利，已在 Google Patents 公开或授权，支撑智能客服与云端语音场景落地。</span>
+              <span class="lang lang-en lang-block">A selection of patents spanning voice interaction, interruption handling, and smart-home communication interception—published or granted on Google Patents to support intelligent service scenarios.</span>
+            </p>
+          </div>
+          <div class="patent-list">
+            <article class="patent-card">
+              <div class="patent-meta">
+                <span class="patent-number">CN110427460A</span>
+                <span class="patent-date">
+                  <span class="lang lang-zh">公开：2019-11-08 · 申请：2019-08-06</span>
+                  <span class="lang lang-en">Published: 2019-11-08 · Filed: 2019-08-06</span>
+                </span>
+                <span class="patent-status">
+                  <span class="lang lang-zh">状态：公开</span>
+                  <span class="lang lang-en">Status: Published</span>
+                </span>
+              </div>
+              <h3 class="patent-title">
+                <span class="lang lang-zh">用于交互信息的方法及装置</span>
+                <span class="lang lang-en">Method and Device for Interactive Information</span>
+              </h3>
+              <p class="patent-summary">
+                <span class="lang lang-zh lang-block">在语音播报过程中检测打断条件，及时停止当前语音并切换回应逻辑，提升人机交互的灵活性与效率。</span>
+                <span class="lang lang-en lang-block">Detects interruption conditions during speech playback to stop current audio and switch responses, improving flexibility and efficiency in voice interactions.</span>
+              </p>
+              <div class="patent-links">
+                <a class="patent-link" href="https://patents.google.com/patent/CN110427460A/zh" target="_blank" rel="noreferrer">
+                  <span class="lang lang-zh">查看详情</span>
+                  <span class="lang lang-en">View Patent</span>
+                </a>
+              </div>
+            </article>
+            <article class="patent-card">
+              <div class="patent-meta">
+                <span class="patent-number">CN110457437A</span>
+                <span class="patent-date">
+                  <span class="lang lang-zh">公开：2019-11-15 · 申请：2019-08-06</span>
+                  <span class="lang lang-en">Published: 2019-11-15 · Filed: 2019-08-06</span>
+                </span>
+                <span class="patent-status">
+                  <span class="lang lang-zh">状态：公开</span>
+                  <span class="lang lang-en">Status: Published</span>
+                </span>
+              </div>
+              <h3 class="patent-title">
+                <span class="lang lang-zh">用于交互信息的方法及装置</span>
+                <span class="lang lang-en">Method and Device for Interactive Information</span>
+              </h3>
+              <p class="patent-summary">
+                <span class="lang lang-zh lang-block">通过监测语音播放时长与等待阈值，自动轮播下一段语音或发起提醒，保障信息交互的准确性和响应速度。</span>
+                <span class="lang lang-en lang-block">Monitors playback duration and wait thresholds to trigger the next message or reminders, ensuring timely and accurate conversational responses.</span>
+              </p>
+              <div class="patent-links">
+                <a class="patent-link" href="https://patents.google.com/patent/CN110457437A/zh" target="_blank" rel="noreferrer">
+                  <span class="lang lang-zh">查看详情</span>
+                  <span class="lang lang-en">View Patent</span>
+                </a>
+              </div>
+            </article>
+            <article class="patent-card">
+              <div class="patent-meta">
+                <span class="patent-number">CN111599341B</span>
+                <span class="patent-date">
+                  <span class="lang lang-zh">授权：2023-06-20 · 申请：2020-05-13</span>
+                  <span class="lang lang-en">Granted: 2023-06-20 · Filed: 2020-05-13</span>
+                </span>
+                <span class="patent-status patent-status--granted">
+                  <span class="lang lang-zh">状态：已授权</span>
+                  <span class="lang lang-en">Status: Granted</span>
+                </span>
+              </div>
+              <h3 class="patent-title">
+                <span class="lang lang-zh">用于生成语音的方法和装置</span>
+                <span class="lang lang-en">Method and Device for Generating Speech</span>
+              </h3>
+              <p class="patent-summary">
+                <span class="lang lang-zh lang-block">针对话术进行分段与录音匹配，避免实时全量合成，大幅提高语音交互的生成效率与成本控制。</span>
+                <span class="lang lang-en lang-block">Segments scripted utterances and reuses recorded snippets instead of full real-time synthesis, boosting efficiency and reducing costs for voice interactions.</span>
+              </p>
+              <div class="patent-links">
+                <a class="patent-link" href="https://patents.google.com/patent/CN111599341B/zh" target="_blank" rel="noreferrer">
+                  <span class="lang lang-zh">查看详情</span>
+                  <span class="lang lang-en">View Patent</span>
+                </a>
+              </div>
+            </article>
+            <article class="patent-card">
+              <div class="patent-meta">
+                <span class="patent-number">CN110896427B</span>
+                <span class="patent-date">
+                  <span class="lang lang-zh">授权：2025-06-17 · 申请：2019-10-09</span>
+                  <span class="lang lang-en">Granted: 2025-06-17 · Filed: 2019-10-09</span>
+                </span>
+                <span class="patent-status patent-status--granted">
+                  <span class="lang lang-zh">状态：已授权</span>
+                  <span class="lang lang-en">Status: Granted</span>
+                </span>
+              </div>
+              <h3 class="patent-title">
+                <span class="lang lang-zh">通信拦截的处理方法、装置、电子设备及可读存储介质</span>
+                <span class="lang lang-en">Communication Interception Handling Method and Device</span>
+              </h3>
+              <p class="patent-summary">
+                <span class="lang lang-zh lang-block">结合智能家居设备与通信拦截系统，同步群组成员的拦截数据，为用户提供实时可查询的安全通信体验。</span>
+                <span class="lang lang-en lang-block">Combines smart-home devices with interception services to synchronize blocked communication records, enabling users to query secure communication states in real time.</span>
+              </p>
+              <div class="patent-links">
+                <a class="patent-link" href="https://patents.google.com/patent/CN110896427B/zh" target="_blank" rel="noreferrer">
+                  <span class="lang lang-zh">查看详情</span>
+                  <span class="lang lang-en">View Patent</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="education" class="section">
+          <div class="section-header">
+            <span class="section-kicker">
+              <span class="lang lang-zh">教育</span>
+              <span class="lang lang-en">Education</span>
+            </span>
+            <h2>
+              <span class="lang lang-zh">教育经历</span>
+              <span class="lang lang-en">Education</span>
+            </h2>
+          </div>
+          <div class="education-list">
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="education-period">2011.09 → 2014.01</span>
+                <span class="education-location">
+                  <span class="lang lang-zh">哈尔滨工业大学 · 硕士</span>
+                  <span class="lang lang-en">Harbin Institute of Technology · M.S.</span>
+                </span>
+              </div>
+              <p>
+                <span class="lang lang-zh lang-block">计算机科学与技术专业，主修自然语言处理、信息检索、数据挖掘与机器学习。</span>
+                <span class="lang lang-en lang-block">Computer Science & Technology, focusing on NLP, information retrieval, data mining, and machine learning.</span>
+              </p>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="education-period">2007.09 → 2011.07</span>
+                <span class="education-location">
+                  <span class="lang lang-zh">哈尔滨工业大学 · 本科</span>
+                  <span class="lang lang-en">Harbin Institute of Technology · B.S.</span>
+                </span>
+              </div>
+              <p>
+                <span class="lang lang-zh lang-block">计算机科学与技术专业，担任班长与社团负责人，班级获省优秀班集体，个人获省优秀学生。</span>
+                <span class="lang lang-en lang-block">Computer Science & Technology, serving as class monitor and club lead; honored as Outstanding Student and part of a provincial award-winning class.</span>
+              </p>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span class="education-period">
+                  <span class="lang lang-zh">2023 年</span>
+                  <span class="lang lang-en">2023</span>
+                </span>
+                <span class="education-location">
+                  <span class="lang lang-zh">PMI-ACP</span>
+                  <span class="lang lang-en">PMI-ACP</span>
+                </span>
+              </div>
+              <p>
+                <span class="lang lang-zh lang-block">调休期间系统学习敏捷项目管理并通过 PMI-ACP 认证，持续打磨跨团队协作与交付效率。</span>
+                <span class="lang lang-en lang-block">Completed PMI-ACP certification while rejoining Tencent, deepening agile project management skills and cross-team delivery efficiency.</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="contact" class="section">
+          <div class="section-header">
+            <span class="section-kicker">
+              <span class="lang lang-zh">联系</span>
+              <span class="lang lang-en">Contact</span>
+            </span>
+            <h2>
+              <span class="lang lang-zh">保持联系</span>
+              <span class="lang lang-en">Stay in Touch</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">欢迎聊聊项目合作、职业机会或任何有趣的问题。</span>
+              <span class="lang lang-en lang-block">Let’s discuss collaborations, opportunities, or anything interesting.</span>
+            </p>
+          </div>
+          <div class="contact-panel">
+            <div class="contact-item">
+              <h3>
+                <span class="lang lang-zh">邮箱</span>
+                <span class="lang lang-en">Email</span>
+              </h3>
+              <a href="mailto:vipgss@gmail.com">vipgss@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <h3>GitHub</h3>
+              <a href="https://github.com/guanshan" target="_blank" rel="noreferrer">@guanshan</a>
+            </div>
+            <div class="contact-item">
+              <h3>
+                <span class="lang lang-zh">所在地</span>
+                <span class="lang lang-en">Location</span>
+              </h3>
+              <span>
+                <span class="lang lang-zh">中国 · 北京市朝阳区</span>
+                <span class="lang lang-en">Chaoyang District, Beijing, China</span>
+              </span>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p>
+          <span class="lang lang-zh">© <span data-year></span> 官山山 · 设计用于 GitHub Pages。</span>
+          <span class="lang lang-en">© <span data-year></span> Guanshan · Designed for GitHub Pages.</span>
+        </p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script src="javascripts/main.js" type="module"></script>
   </body>
 </html>
