@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-lang="zh">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,7 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <style>
+      .lang,
+      .lang-block,
+      .lang-flex {
+        display: none !important;
+      }
+      html[data-lang="zh"] .lang-zh,
+      html[data-lang="en"] .lang-en {
+        display: inline !important;
+      }
+      html[data-lang="zh"] .lang-zh.lang-block,
+      html[data-lang="en"] .lang-en.lang-block {
+        display: block !important;
+      }
+      html[data-lang="zh"] .lang-zh.lang-flex,
+      html[data-lang="en"] .lang-en.lang-flex {
+        display: flex !important;
+      }
+    </style>
+    <link rel="stylesheet" href="stylesheets/styles.css?v=20250210">
   </head>
   <body>
     <div class="page" id="top">
@@ -537,6 +556,6 @@
         </p>
       </footer>
     </div>
-    <script src="javascripts/main.js" type="module"></script>
+    <script src="javascripts/main.js?v=20250210" type="module"></script>
   </body>
 </html>
