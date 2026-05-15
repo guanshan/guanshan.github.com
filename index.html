@@ -3,11 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="官山山的个人主页，展示项目、经历、专利与联系方式 · Personal site of Guanshan.">
-    <title>官山山 · Guanshan</title>
+    <meta name="description" content="官山山 · 腾讯云后台开发高级工程师。专注企业级 Agent 平台架构与大模型应用工程化：Agent Runtime、RAG、MCP、云沙盒、多租户 AI 平台。">
+    <title>官山山 · 企业级 Agent 平台架构</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="canonical" href="https://guanshan.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://guanshan.github.io/">
+    <meta property="og:title" content="官山山 · Guanshan — Enterprise Agent Platform Architect">
+    <meta property="og:description" content="Senior Backend Engineer at Tencent Cloud. Enterprise Agent Platform · LLM Application Engineering — Agent Runtime, RAG, MCP, cloud sandboxes, multi-tenant AI platforms.">
+    <meta property="og:image" content="https://guanshan.github.io/og-card.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="官山山 · Guanshan — Enterprise Agent Platform Architect">
+    <meta name="twitter:description" content="Enterprise Agent Platform · LLM Application Engineering — Agent Runtime, RAG, MCP, cloud sandbox, multi-tenant AI platform.">
+    <meta name="twitter:image" content="https://guanshan.github.io/og-card.svg">
+    <meta name="theme-color" content="#0b1220">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
       .lang,
       .lang-block,
@@ -27,93 +43,165 @@
         display: flex !important;
       }
     </style>
-    <link rel="stylesheet" href="stylesheets/styles.css?v=20250210">
+    <link rel="stylesheet" href="stylesheets/styles.css?v=20260511j">
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress-bar" data-scroll-bar></div>
+    </div>
     <div class="page" id="top">
-      <header class="hero">
-        <nav class="site-nav">
-          <a class="brand" href="#top">
-            <span class="lang lang-zh">官山山</span>
-            <span class="lang lang-en">Guanshan</span>
-          </a>
-          <div class="nav-actions">
-            <button class="lang-toggle" type="button" data-lang-toggle aria-label="切换到英文">
-              <span class="lang lang-zh">English</span>
-              <span class="lang lang-en">中文</span>
-            </button>
-            <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题">
-              <span class="theme-toggle-icon" aria-hidden="true"></span>
-              <span class="theme-toggle-label">日间</span>
-            </button>
-          </div>
-        </nav>
+      <a class="skip-to-content" href="#main">
+        <span class="lang lang-zh">跳到主内容</span>
+        <span class="lang lang-en">Skip to main content</span>
+      </a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a class="brand" href="#top">
+          <span class="lang lang-zh">官山山</span>
+          <span class="lang lang-en">Guanshan</span>
+        </a>
+        <ul class="nav-links" id="primary-nav">
+          <li><a href="#about"><span class="lang lang-zh">关于</span><span class="lang lang-en">About</span></a></li>
+          <li><a href="#thesis"><span class="lang lang-zh">主线</span><span class="lang lang-en">Thesis</span></a></li>
+          <li><a href="#focus"><span class="lang lang-zh">方向</span><span class="lang lang-en">Focus</span></a></li>
+          <li><a href="#projects"><span class="lang lang-zh">项目</span><span class="lang lang-en">Projects</span></a></li>
+          <li><a href="#experience"><span class="lang lang-zh">经历</span><span class="lang lang-en">Experience</span></a></li>
+          <li><a href="#awards"><span class="lang lang-zh">荣誉</span><span class="lang lang-en">Awards</span></a></li>
+          <li><a href="#patents"><span class="lang lang-zh">专利</span><span class="lang lang-en">Patents</span></a></li>
+          <li><a href="#impact"><span class="lang lang-zh">影响力</span><span class="lang lang-en">Impact</span></a></li>
+          <li><a href="#contact"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="lang-toggle" type="button" data-lang-toggle aria-label="切换到英文">
+            <span class="lang lang-zh">EN</span>
+            <span class="lang lang-en">中</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题">
+            <span class="theme-toggle-icon" aria-hidden="true">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+            <span class="theme-toggle-label lang lang-zh">日间</span>
+            <span class="theme-toggle-label lang lang-en">Day</span>
+          </button>
+          <button class="nav-burger" type="button" data-nav-burger aria-label="打开菜单" aria-expanded="false" aria-controls="primary-nav">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          </button>
+        </div>
+      </nav>
+      <header class="hero reveal">
         <div class="hero-content">
-          <p class="eyebrow">
-            <span class="lang lang-zh">后端 · AI 应用</span>
-            <span class="lang lang-en">Backend · AI Applications</span>
-          </p>
+          <span class="eyebrow">
+            <span class="lang lang-zh">企业级 Agent 平台 · LLM 工程化</span>
+            <span class="lang lang-en">Enterprise Agent Platform · LLM Engineering</span>
+          </span>
           <h1>
-            <span class="lang lang-zh">腾讯云后台开发高级工程师 / AI 应用架构师</span>
-            <span class="lang lang-en">Senior Backend Engineer at Tencent Cloud · AI Application Architect</span>
+            <span class="lang lang-zh lang-block">把大模型的<span class="accent-text">不确定推理</span>，工程化为可交付的<span class="accent-text">智能任务执行平台</span>。</span>
+            <span class="lang lang-en lang-block">Engineering <span class="accent-text">non-deterministic LLM reasoning</span> into a deliverable <span class="accent-text">task-execution platform</span> for the enterprise.</span>
           </h1>
           <p class="lead">
-            <span class="lang lang-zh lang-block">超过十年企业级产品经验，专注于智能客服、RAG、多 Agent 运行时与云原生平台建设。从百度、创业到腾讯云，一直在用工程能力把复杂问题拆解为可落地的解决方案。</span>
-            <span class="lang lang-en lang-block">Over a decade building enterprise products across intelligent customer service, RAG pipelines, multi-agent runtimes, and cloud-native platforms. From Baidu and entrepreneurship to Tencent Cloud, I turn complex ideas into reliable experiences.</span>
+            <span class="lang lang-zh lang-block">官山山，腾讯云后台开发高级工程师。十余年企业级后台与平台架构经验，聚焦 Agent Runtime、RAG、MCP、云沙盒与多租户 AI 平台，致力于将大模型能力转化为可部署、可运营的企业级工程能力。</span>
+            <span class="lang lang-en lang-block">Guanshan — Senior Backend Engineer at Tencent Cloud. Over a decade architecting enterprise backends and platforms, focused on Agent Runtime, RAG, MCP, cloud sandboxes, and multi-tenant AI platforms — translating model capability into deployable, operable enterprise systems.</span>
           </p>
           <div class="hero-actions">
             <a class="button primary" href="https://github.com/guanshan" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.63 22.41c.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.08-.12-.3-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.5 3.17-1.18 3.17-1.18.62 1.58.23 2.74.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.79.56A11.5 11.5 0 0 0 12 .5z"/></svg>
               <span class="lang lang-zh">GitHub</span>
               <span class="lang lang-en">GitHub</span>
             </a>
             <a class="button" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
               <span class="lang lang-zh">联系我</span>
               <span class="lang lang-en">Contact</span>
             </a>
           </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value"><span class="accent-text">0</span></span>
+              <span class="stat-label">
+                <span class="lang lang-zh">故障 · Agent 上线至今</span>
+                <span class="lang lang-en">Incidents since launch</span>
+              </span>
+            </div>
+            <div class="stat">
+              <span class="stat-value"><span class="accent-text">4</span></span>
+              <span class="stat-label">
+                <span class="lang lang-zh">项发明专利</span>
+                <span class="lang lang-en">Invention patents</span>
+              </span>
+            </div>
+            <div class="stat">
+              <span class="stat-value"><span class="accent-text">10+</span></span>
+              <span class="stat-label">
+                <span class="lang lang-zh">年企业平台工程</span>
+                <span class="lang lang-en">Years in platform engineering</span>
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="hero-highlight">
+        <aside class="hero-highlight">
           <ul class="highlight-list">
             <li>
-              <span class="highlight-kicker">
-                <span class="lang lang-zh">方向</span>
-                <span class="lang lang-en">Focus</span>
-              </span>
-              <span class="highlight-title">
-                <span class="lang lang-zh">企业级智能客服 · RAG · 多 Agent 系统</span>
-                <span class="lang lang-en">Enterprise Intelligent Service · RAG · Multi-Agent Systems</span>
-              </span>
+              <span class="highlight-index">01</span>
+              <div>
+                <span class="highlight-kicker">
+                  <span class="lang lang-zh">方向</span>
+                  <span class="lang lang-en">Focus</span>
+                </span>
+                <span class="highlight-title">
+                  <span class="lang lang-zh">Agent Runtime · RAG · MCP · 云沙盒 · 多租户 AI 平台</span>
+                  <span class="lang lang-en">Agent Runtime · RAG · MCP · Cloud Sandbox · Multi-tenant AI Platform</span>
+                </span>
+              </div>
             </li>
             <li>
-              <span class="highlight-kicker">
-                <span class="lang lang-zh">擅长</span>
-                <span class="lang lang-en">Expertise</span>
-              </span>
-              <span class="highlight-title">
-                <span class="lang lang-zh">Golang / Java / C++ · 云原生 · AI 平台</span>
-                <span class="lang lang-en">Golang / Java / C++ · Cloud Native · AI Platforms</span>
-              </span>
+              <span class="highlight-index">02</span>
+              <div>
+                <span class="highlight-kicker">
+                  <span class="lang lang-zh">擅长</span>
+                  <span class="lang lang-en">Expertise</span>
+                </span>
+                <span class="highlight-title">
+                  <span class="lang lang-zh">大模型应用工程化 · 平台架构 · Golang / Java / C++</span>
+                  <span class="lang lang-en">LLM Application Engineering · Platform Architecture · Golang / Java / C++</span>
+                </span>
+              </div>
             </li>
             <li>
-              <span class="highlight-kicker">
-                <span class="lang lang-zh">目前</span>
-                <span class="lang lang-en">Current</span>
-              </span>
-              <span class="highlight-title">
-                <span class="lang lang-zh">腾讯云 · 云产品三部 · 后台开发高级工程师</span>
-                <span class="lang lang-en">Tencent Cloud · Cloud Products · Senior Backend Engineer</span>
-              </span>
+              <span class="highlight-index">03</span>
+              <div>
+                <span class="highlight-kicker">
+                  <span class="lang lang-zh">目前</span>
+                  <span class="lang lang-en">Current</span>
+                </span>
+                <span class="highlight-title">
+                  <span class="lang lang-zh">腾讯云 · 智能体开发平台（ADP）Agent 方向负责人</span>
+                  <span class="lang lang-en">Tencent Cloud · Agent Track Lead, Agent Development Platform (ADP)</span>
+                </span>
+              </div>
             </li>
           </ul>
-        </div>
+        </aside>
       </header>
-      <main>
-        <section id="about" class="section">
+      <section class="quote-section reveal" aria-label="Tagline">
+        <p class="quote-body">
+          <span class="lang lang-zh lang-block">不是把模型调用<span class="accent-text">做薄</span>，而是把平台工程<span class="accent-text">做厚</span>。</span>
+          <span class="lang lang-en lang-block">Don't <span class="accent-text">thin</span> the model call. <span class="accent-text">Thicken</span> the engineering underneath.</span>
+        </p>
+        <p class="quote-supporting">
+          <span class="lang lang-zh lang-block"><span class="accent-text">敢交付 · 可治理 · 可规模</span> &mdash; Agent 平台的工程定义。</span>
+          <span class="lang lang-en lang-block"><span class="accent-text">Deliverable · governable · scalable</span> &mdash; the engineering bar for an agent platform.</span>
+        </p>
+      </section>
+      <main id="main">
+        <section id="about" class="section reveal">
           <div class="section-header">
-            <span class="section-kicker">
-              <span class="lang lang-zh">关于</span>
-              <span class="lang lang-en">About</span>
-            </span>
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">关于</span>
+                <span class="lang lang-en">About</span>
+              </span>
+            </div>
             <h2>
               <span class="lang lang-zh">关于我</span>
               <span class="lang lang-en">About Me</span>
@@ -121,179 +209,418 @@
           </div>
           <div class="section-body">
             <p>
-              <span class="lang lang-zh lang-block">拥有哈尔滨工业大学计算机科学与技术本硕背景，常驻北京。十余年里在百度云、百度移动搜索、创业公司与腾讯云的核心团队负责后台服务建设、AI 平台和对话机器人产品。</span>
-              <span class="lang lang-en lang-block">Based in Beijing with both bachelor’s and master’s degrees in computer science from Harbin Institute of Technology, I have led backend services, AI platforms, and conversational products at Baidu Cloud, Baidu Search, startups, and Tencent Cloud.</span>
+              <span class="lang lang-zh lang-block">哈尔滨工业大学计算机科学与技术本硕，常驻北京。十余年里在百度搜索、百度云、自主创业到腾讯云的核心团队负责后台架构、AI 平台与对话产品，经历过搜索后端、语音 PaaS、机器学习平台到企业级 Agent 平台的多个技术周期。</span>
+              <span class="lang lang-en lang-block">Based in Beijing, with bachelor's and master's degrees in computer science from Harbin Institute of Technology. Over the past decade I've led backend systems, AI platforms, and conversational products across Baidu Search, Baidu Cloud, an entrepreneurial venture, and Tencent Cloud — spanning search infrastructure, voice PaaS, machine-learning platforms, and now enterprise agent platforms.</span>
             </p>
             <p>
-              <span class="lang lang-zh lang-block">当前在腾讯云云产品三部负责企点智能助手的 RAG 能力、多模态问答、Agent/MCP 体系与云沙盒等关键模块，注重企业级场景的稳定性与可扩展性。</span>
-              <span class="lang lang-en lang-block">I currently own the Qidian intelligent assistant at Tencent Cloud—covering RAG capabilities, multimodal QA, the Agent/MCP stack, and cloud sandbox foundation—delivering stable, extensible solutions for enterprise customers.</span>
+              <span class="lang lang-zh lang-block">我的核心优势在于三类能力的连接：理解大模型的能力与边界、设计支撑模型落地的平台架构、将客户场景抽象为可复用的产品能力。当前聚焦企业级 Agent 平台建设，覆盖 Agent Runtime、RAG、MCP、云沙盒、多模态问答、权限与安全、可观测与评测等核心能力。</span>
+              <span class="lang lang-en lang-block">My core strength lies at the intersection of three capabilities: understanding the boundaries of large language models, architecting the platforms that make them deployable, and abstracting customer scenarios into reusable product primitives. I currently focus on enterprise agent platforms — Agent Runtime, RAG, MCP, cloud sandbox, multimodal QA, tenancy and security, observability and evaluation.</span>
             </p>
             <p>
-              <span class="lang lang-zh lang-block">擅长跨团队协作、快速理解业务需求并给出数据驱动的技术方案，获得多次 Outstanding Contributor、研发大师奖等荣誉。</span>
-              <span class="lang lang-en lang-block">I thrive in cross-team collaboration, translating business goals into data-driven engineering plans, and have been recognized with multiple Outstanding Contributor and R&D Master awards.</span>
+              <span class="lang lang-zh lang-block">我聚焦的核心问题是：如何将 LLM 的非确定性推理输出纳入企业可接受的确定性工程链路；如何让 Agent 具备工具调用、知识检索、流程编排、状态管理、执行审计与容错降级等运行时能力；如何将客户交付中反复出现的问题沉淀为可治理、可规模化交付的平台能力。</span>
+              <span class="lang lang-en lang-block">The problems I focus on: integrating non-deterministic LLM outputs into the deterministic engineering pipelines enterprises require; equipping agents with tool use, knowledge retrieval, workflow orchestration, state management, execution auditing, and fault tolerance as runtime primitives; and crystallizing recurring delivery patterns into governable, scalable platform capabilities.</span>
             </p>
           </div>
         </section>
-        <section id="projects" class="section">
+        <section id="thesis" class="section reveal">
           <div class="section-header">
-            <span class="section-kicker">
-              <span class="lang lang-zh">项目</span>
-              <span class="lang lang-en">Projects</span>
-            </span>
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">技术主线</span>
+                <span class="lang lang-en">Thesis</span>
+              </span>
+            </div>
+            <h2>
+              <span class="lang lang-zh">技术主线</span>
+              <span class="lang lang-en">Technical Thesis</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">在企业级 Agent 平台这件事上，我关心的几个核心命题。</span>
+              <span class="lang lang-en lang-block">A few core convictions that shape how I build enterprise agent platforms.</span>
+            </p>
+          </div>
+          <div class="thesis-list">
+            <article class="thesis-item">
+              <span class="thesis-number">01</span>
+              <h3 class="thesis-heading">
+                <span class="lang lang-zh">不确定 vs. 确定性</span>
+                <span class="lang lang-en">Non-determinism vs. determinism</span>
+              </h3>
+              <p class="thesis-body">
+                <span class="lang lang-zh lang-block">LLM 推理能力突出，但具有内在不确定性；企业交付所要求的是确定性、安全性与可解释性。Agent 平台的核心价值不在于模型调用本身，而在于以工程化方式将这种不确定性收敛至企业可接受的边界之内。</span>
+                <span class="lang lang-en lang-block">LLMs are capable but inherently non-deterministic, whereas enterprise delivery demands determinism, security, and explainability. An agent platform's core value lies not in invoking the model itself, but in engineering that non-determinism back within boundaries the enterprise can accept.</span>
+              </p>
+            </article>
+            <article class="thesis-item">
+              <span class="thesis-number">02</span>
+              <h3 class="thesis-heading">
+                <span class="lang lang-zh">Agent 不是聊天机器人</span>
+                <span class="lang lang-en">Agents are not chatbots</span>
+              </h3>
+              <p class="thesis-body">
+                <span class="lang lang-zh lang-block">我倾向于将 Agent 定义为一类包含非确定性决策节点的任务执行系统，而非对话界面的延伸。任务规划、工具调用、状态持久化、人工确认、失败补偿与执行审计，是 Agent 在企业生产环境中稳定运行的前置条件。</span>
+                <span class="lang lang-en lang-block">I define agents as task-execution systems containing non-deterministic decision points, not as extensions of a chat interface. Task planning, tool use, durable state, human-in-the-loop checkpoints, failure compensation, and execution auditing are the prerequisites for agents to operate reliably in production.</span>
+              </p>
+            </article>
+            <article class="thesis-item">
+              <span class="thesis-number">03</span>
+              <h3 class="thesis-heading">
+                <span class="lang lang-zh">平台的核心不是模型调用</span>
+                <span class="lang lang-en">The platform isn't the model call</span>
+              </h3>
+              <p class="thesis-body">
+                <span class="lang lang-zh lang-block">企业级 Agent 平台的核心命题，是建设完备的权限、安全、编排、可观测、评测、成本与交付治理体系，而非聚焦于模型调用本身。正是这些非展示性的工程层，决定了模型能力能否被稳定交付。</span>
+                <span class="lang lang-en lang-block">The hard part of an enterprise agent platform is not the model-invocation layer, but the underlying infrastructure: permissions, security, orchestration, observability, evaluation, cost, and delivery governance. It is this non-customer-facing engineering layer that determines whether model capability can be reliably delivered.</span>
+              </p>
+            </article>
+            <article class="thesis-item">
+              <span class="thesis-number">04</span>
+              <h3 class="thesis-heading">
+                <span class="lang lang-zh">平台应当沉淀，而不是堆叠</span>
+                <span class="lang lang-en">Platforms should compound</span>
+              </h3>
+              <p class="thesis-body">
+                <span class="lang lang-zh lang-block">成熟的 Agent 平台应具备能力沉淀机制：将客户场景中反复出现的问题抽象为可治理、可复用的平台原语，使平台能力在持续使用中收敛，单次交付成本逐步下降。</span>
+                <span class="lang lang-en lang-block">A mature agent platform should embed a capability-compounding mechanism: every recurring problem in customer delivery distilled into a reusable, governable primitive, so the platform converges over iterations and the marginal cost of delivery declines.</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="focus" class="section reveal">
+          <div class="section-header">
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">能力方向</span>
+                <span class="lang lang-en">Focus</span>
+              </span>
+            </div>
+            <h2>
+              <span class="lang lang-zh">技术方向</span>
+              <span class="lang lang-en">Focus &amp; Expertise</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">围绕企业级 Agent 平台的六个能力方向，从运行时到产品化交付。</span>
+              <span class="lang lang-en lang-block">Six capability tracks around the enterprise agent platform — from runtime to productization.</span>
+            </p>
+          </div>
+          <div class="focus-grid">
+            <article class="focus-item">
+              <span class="focus-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5"/><circle cx="5" cy="5" r="1.8"/><circle cx="19" cy="5" r="1.8"/><circle cx="5" cy="19" r="1.8"/><circle cx="19" cy="19" r="1.8"/><path d="M6.6 6.6 10 10M17.4 6.6 14 10M6.6 17.4 10 14M17.4 17.4 14 14"/></svg>
+              </span>
+              <h3 class="focus-title">
+                <span class="lang lang-zh">Agent 运行时架构</span>
+                <span class="lang lang-en">Agent Runtime Architecture</span>
+              </h3>
+              <p class="focus-body">
+                <span class="lang lang-zh lang-block">让 Agent 在企业环境中具备可预期、可恢复、可审计的执行能力：任务规划、工具编排、状态持久化、异步执行、人工确认、失败补偿、执行轨迹。</span>
+                <span class="lang lang-en lang-block">Predictable, recoverable, auditable agent execution for enterprise environments: task planning, tool orchestration, durable state, async execution, human-in-the-loop checkpoints, failure compensation, and full execution traces.</span>
+              </p>
+            </article>
+            <article class="focus-item">
+              <span class="focus-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg>
+              </span>
+              <h3 class="focus-title">
+                <span class="lang lang-zh">大模型应用工程化</span>
+                <span class="lang lang-en">LLM Application Engineering</span>
+              </h3>
+              <p class="focus-body">
+                <span class="lang lang-zh lang-block">把模型能力转换为可衡量、可演进、可控成本的工程资产：Prompt 与上下文工程、结构化输出、模型路由、评测闭环、成本治理。</span>
+                <span class="lang lang-en lang-block">Turning model capability into measurable, iteratable, cost-bounded engineering assets: prompt and context engineering, structured outputs, model routing, evaluation loops, and cost governance.</span>
+              </p>
+            </article>
+            <article class="focus-item">
+              <span class="focus-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><circle cx="10.5" cy="15" r="2.5"/><path d="m13 17.5 2.5 2.5"/></svg>
+              </span>
+              <h3 class="focus-title">
+                <span class="lang lang-zh">检索增强与知识工程</span>
+                <span class="lang lang-en">RAG &amp; Knowledge Engineering</span>
+              </h3>
+              <p class="focus-body">
+                <span class="lang lang-zh lang-block">让企业知识在 LLM 链路中既能被理解，也能被控制：文档解析、分块策略、混合检索、Rerank、Query Rewrite、引用还原、权限感知检索。</span>
+                <span class="lang lang-en lang-block">Making enterprise knowledge both usable to LLMs and controllable by the business: document parsing, chunking strategies, hybrid retrieval, reranking, query rewriting, citation alignment, and permission-aware retrieval.</span>
+              </p>
+            </article>
+            <article class="focus-item">
+              <span class="focus-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4M10 17.5h4M6.5 10v4M17.5 10v4"/></svg>
+              </span>
+              <h3 class="focus-title">
+                <span class="lang lang-zh">企业级平台架构</span>
+                <span class="lang lang-en">Enterprise Platform Architecture</span>
+              </h3>
+              <p class="focus-body">
+                <span class="lang lang-zh lang-block">按企业级标准组织、部署与运营 AI 能力：多租户、权限模型、服务治理、API 网关、配置管理、灰度发布与可观测体系。</span>
+                <span class="lang lang-en lang-block">Organizing, deploying, and operating AI capabilities to enterprise standards: multi-tenancy, permission models, service governance, API gateways, configuration, progressive rollout, and observability.</span>
+              </p>
+            </article>
+            <article class="focus-item">
+              <span class="focus-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 1 5.7 5.7l-2.1 2.1-5.7-5.7zM4 20l4-1 8.5-8.5-3-3L5 16z"/><path d="m13 8 3 3"/><rect x="2.5" y="2.5" width="6" height="6" rx="1.5"/></svg>
+              </span>
+              <h3 class="focus-title">
+                <span class="lang lang-zh">工具协议与执行沙盒</span>
+                <span class="lang lang-en">Tool · MCP · Sandbox</span>
+              </h3>
+              <p class="focus-body">
+                <span class="lang lang-zh lang-block">在赋予 Agent 执行能力的同时维持安全边界：工具协议设计与注册、权限校验、云沙盒、浏览器自动化、代码执行隔离。</span>
+                <span class="lang lang-en lang-block">Granting agents execution capability while preserving security boundaries: tool protocol design and registry, permission enforcement, cloud sandboxes, browser automation, and isolated code execution.</span>
+              </p>
+            </article>
+            <article class="focus-item">
+              <span class="focus-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c-.5-3 1-6 4-8M14 4c5 0 7 4 7 7-2.5 5-7.5 8-12 8-1 0-2-.2-2-2 0-4.5 3-9.5 7-13z"/><circle cx="14.5" cy="9.5" r="1.5"/><path d="m4 14 3 3"/></svg>
+              </span>
+              <h3 class="focus-title">
+                <span class="lang lang-zh">产品化与平台交付</span>
+                <span class="lang lang-en">Productization &amp; Delivery</span>
+              </h3>
+              <p class="focus-body">
+                <span class="lang lang-zh lang-block">将客户交付中反复出现的问题沉淀为平台能力，使单次解决方案转化为可复用、可治理、可规模化交付的产品原语。</span>
+                <span class="lang lang-en lang-block">Distilling recurring delivery patterns into platform primitives — converting single solutions into reusable, governable, and scalable product capabilities.</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="projects" class="section reveal">
+          <div class="section-header">
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">项目</span>
+                <span class="lang lang-en">Projects</span>
+              </span>
+            </div>
             <h2>
               <span class="lang lang-zh">代表项目</span>
               <span class="lang lang-en">Featured Work</span>
             </h2>
             <p class="section-description">
-              <span class="lang lang-zh lang-block">以下是最近比较喜欢的项目，更多作品可以在 GitHub 查看。</span>
-              <span class="lang lang-en lang-block">A snapshot of recent work I’m proud of; explore GitHub for additional projects and experiments.</span>
+              <span class="lang lang-zh lang-block">选取三个项目，体现"对话系统 → AI 平台 → Agent 平台"的连续技术主线。更多作品可在 GitHub 查看。</span>
+              <span class="lang lang-en lang-block">Three projects representing a continuous technical arc — from conversational systems, to AI platforms, to enterprise agent platforms. Additional work on GitHub.</span>
             </p>
           </div>
           <div class="card-grid">
-            <article class="card">
-              <div class="card-kicker">
-                <span class="lang lang-zh">Agent Platform</span>
-                <span class="lang lang-en">Agent Platform</span>
-              </div>
+            <article class="card card--feature">
+              <span class="card-kicker">
+                <span class="lang lang-zh">Enterprise Agent Platform · ADP</span>
+                <span class="lang lang-en">Enterprise Agent Platform · ADP</span>
+              </span>
               <h3 class="card-title">
-                <span class="lang lang-zh">腾讯云智能体开发平台</span>
-                <span class="lang lang-en">Tencent Cloud Intelligent Agent Platform</span>
+                <span class="lang lang-zh">腾讯云智能体开发平台（ADP）</span>
+                <span class="lang lang-en">Tencent Cloud Agent Development Platform (ADP)</span>
               </h3>
               <p class="card-body">
-                <span class="lang lang-zh lang-block">搭建企业级智能体开发、托管与监控的一站式平台，从知识构建、RAG 能力、Agent SDK 到多租户运行时全链路负责，帮助业务团队快速落地智能助手。</span>
-                <span class="lang lang-en lang-block">Built an end-to-end platform for developing, hosting, and observing enterprise agents—covering knowledge ingestion, RAG pipelines, Agent SDKs, and multi-tenant runtimes—to accelerate delivery of production-ready assistants.</span>
+                <span class="lang lang-zh lang-block">腾讯大模型 to B 战略核心产品，面向企业的一站式 Agent 应用开发、运行与治理平台。覆盖 LLM + RAG、Workflow、Multi-Agent 等多种应用范式，支持 Reflection、Tool Use、Planning、Plan-and-Execute 等开发模式，并对接官方插件、自定义插件、MCP、本地工具、App 工具、工作流工具等多类工具生态。</span>
+                <span class="lang lang-en lang-block">Tencent's flagship enterprise LLM product — a unified platform for building, running, and governing agent applications. Covers LLM + RAG, Workflow, and Multi-Agent paradigms; supports Reflection, Tool Use, Planning, and Plan-and-Execute modes; and integrates a broad tool ecosystem from first-party plugins to MCP, local tools, app tools, and workflow tools.</span>
               </p>
+              <p class="card-body">
+                <span class="lang lang-zh lang-block">作为 Agent 方向负责人，主导三项核心架构能力，将 LLM 的非确定性收敛为可治理、可规模、可交付的工程体系：</span>
+                <span class="lang lang-en lang-block">As Agent Track Lead, architected three core capabilities that collapse LLM non-determinism into a governable, scalable, deliverable engineering system:</span>
+              </p>
+              <ul class="card-detail-list">
+                <li>
+                  <strong>
+                    <span class="lang lang-zh">MCP 泛化治理</span>
+                    <span class="lang lang-en">MCP Governance</span>
+                  </strong>
+                  <span class="lang lang-zh lang-block">基于代理网关层的本地工具云化（Process as a Service），统一多协议入口、会话与进程的强绑定，配合全链路 Trace 注入。</span>
+                  <span class="lang lang-en lang-block">A proxy-gateway-based "Process as a Service" — cloud-hosting local tools, unifying multi-protocol entry, with strong session-to-process binding and end-to-end tracing.</span>
+                </li>
+                <li>
+                  <strong>
+                    <span class="lang lang-zh">可控执行沙箱</span>
+                    <span class="lang lang-en">Controlled Sandbox</span>
+                  </strong>
+                  <span class="lang lang-zh lang-block">执行流与观测流分离的云原生隔离架构，One Task One Pod 即用即销，配合 WebSocket 实时视觉透传保障"黑盒"操作透明。</span>
+                  <span class="lang lang-en lang-block">A cloud-native isolation architecture with separated execution and observation streams — One Task One Pod, real-time visual streaming over WebSocket to keep "black-box" operations transparent.</span>
+                </li>
+                <li>
+                  <strong>
+                    <span class="lang lang-zh">端云协同协议层</span>
+                    <span class="lang lang-en">End-Cloud Protocol Layer</span>
+                  </strong>
+                  <span class="lang lang-zh lang-block">通过协议适配层统一多端差异，基于状态快照的中断/恢复机制解决长链路任务的会话保持难题。</span>
+                  <span class="lang lang-en lang-block">A protocol-adaptation layer unifying multi-device differences, with state-snapshot interruption/resume that solves session persistence for long-running tasks.</span>
+                </li>
+              </ul>
+              <div class="card-outcomes" aria-label="Key outcomes">
+                <span class="card-outcomes-label">
+                  <span class="lang lang-zh">关键成果</span>
+                  <span class="lang lang-en">Key Outcomes</span>
+                </span>
+                <ul class="outcome-list">
+                  <li><strong>0</strong>
+                    <span class="lang lang-zh">故障 · Agent 上线至今</span>
+                    <span class="lang lang-en">incidents since launch</span>
+                  </li>
+                  <li><strong>50%↓</strong>
+                    <span class="lang lang-zh">核心模块复杂度</span>
+                    <span class="lang lang-en">core-module complexity</span>
+                  </li>
+                  <li><strong>80%↓</strong>
+                    <span class="lang lang-zh">新逻辑 Bug 率（模式化）</span>
+                    <span class="lang lang-en">new-logic bug rate</span>
+                  </li>
+                  <li><strong>
+                      <span class="lang lang-zh">分钟级</span>
+                      <span class="lang lang-en">Minutes</span>
+                    </strong>
+                    <span class="lang lang-zh">线上 Bug 定位时长</span>
+                    <span class="lang lang-en">to localize prod bugs</span>
+                  </li>
+                </ul>
+              </div>
               <ul class="card-tags">
-                <li>Golang</li>
+                <li>Agent Runtime</li>
                 <li>RAG</li>
-                <li>Agent</li>
                 <li>MCP</li>
+                <li>Sandbox</li>
+                <li>Multi-tenant</li>
               </ul>
               <div class="card-actions">
                 <a class="card-link" href="#contact">
-                  <span class="lang lang-zh">交流项目</span>
-                  <span class="lang lang-en">Let’s Talk</span>
+                  <span class="lang lang-zh">合作咨询</span>
+                  <span class="lang lang-en">Discuss collaboration</span>
                 </a>
               </div>
             </article>
             <article class="card">
-              <div class="card-kicker">
-                <span class="lang lang-zh">MLOps Platform</span>
-                <span class="lang lang-en">MLOps Platform</span>
-              </div>
+              <span class="card-kicker">
+                <span class="lang lang-zh">AI Platform Foundations</span>
+                <span class="lang lang-en">AI Platform Foundations</span>
+              </span>
               <h3 class="card-title">
                 <span class="lang lang-zh">腾讯云机器学习平台 TI-ONE</span>
                 <span class="lang lang-en">Tencent Cloud Machine Learning Platform (TI-ONE)</span>
               </h3>
               <p class="card-body">
-                <span class="lang lang-zh lang-block">负责 TI-ONE 平台的后付费计费体系、任务建模、可视化建模与离线跑批能力，实现模型开发、训练、部署的统一工作流并服务金融、制造等行业。</span>
-                <span class="lang lang-en lang-block">Owned billing, task modeling, visual pipelines, and offline scheduling for TI-ONE, unifying model development, training, and deployment workflows for customers across finance, manufacturing, and more.</span>
+                <span class="lang lang-zh lang-block">腾讯云一站式机器学习平台。负责后付费计费体系、任务建模、可视化建模与离线跑批能力，整合模型开发、训练、部署的统一工作流。这段经历在 AI 平台层面建立了"任务即资源、计费即治理、工作流即产品"的工程范式，构成了后续 Agent 平台运行时与多租户能力建设的基础。</span>
+                <span class="lang lang-en lang-block">Tencent Cloud's unified machine-learning platform. Owned postpaid billing, task modeling, visual pipelines, and offline scheduling, integrating model development, training, and deployment into a unified workflow. This work established a platform-level engineering paradigm — tasks as resources, billing as governance, workflows as product surface — that forms the foundation for the agent runtime and multi-tenant capability design I work on today.</span>
               </p>
               <ul class="card-tags">
-                <li>Golang</li>
-                <li>Cloud Native</li>
                 <li>MLOps</li>
+                <li>Cloud Native</li>
+                <li>Multi-tenant</li>
+                <li>Billing</li>
               </ul>
-              <div class="card-actions">
-                <a class="card-link" href="#contact">
-                  <span class="lang lang-zh">交流项目</span>
-                  <span class="lang lang-en">Let’s Talk</span>
-                </a>
-              </div>
             </article>
             <article class="card">
-              <div class="card-kicker">
-                <span class="lang lang-zh">Cloud Voice</span>
-                <span class="lang lang-en">Cloud Voice</span>
-              </div>
+              <span class="card-kicker">
+                <span class="lang lang-zh">Conversational Systems</span>
+                <span class="lang lang-en">Conversational Systems</span>
+              </span>
               <h3 class="card-title">
                 <span class="lang lang-zh">百度云智能外呼平台</span>
                 <span class="lang lang-en">Baidu Cloud Outbound Voice Platform</span>
               </h3>
               <p class="card-body">
-                <span class="lang lang-zh lang-block">负责语音产品 PaaS 化、计费策略与呼叫中心对接，实现 MRCP Server 升级、TTS 缓存与打断策略优化，孵化多篇专利并支撑私有化客户落地。</span>
-                <span class="lang lang-en lang-block">Delivered the voice product as a PaaS offering, designed billing policies, integrated with contact centers, upgraded MRCP servers, and optimized TTS caching and interruption strategies—resulting in multiple patents and private deployments.</span>
+                <span class="lang lang-zh lang-block">百度云智能外呼平台。负责语音产品 PaaS 化、MRCP Server 升级、TTS 缓存与打断策略、计费体系建设与呼叫中心系统集成，产出多项发明专利并支撑多个私有化交付项目。此阶段系统性建立了对话系统、语音交互、ASR/TTS、实时打断与端到端 PaaS 交付的工程能力，是当前多模态 Agent、实时交互与企业语音场景的技术基础。</span>
+                <span class="lang lang-en lang-block">Baidu Cloud's outbound voice platform. Led the PaaS transformation of the voice product line, the MRCP server upgrade, TTS caching and interruption strategies, billing system design, and contact-center integrations — resulting in multiple invention patents and several on-premise deployments. This stage established hands-on engineering competence across dialog systems, voice interaction, ASR/TTS, real-time interruption, and end-to-end PaaS delivery — directly underpinning current work on multimodal agents, real-time interaction, and enterprise voice systems.</span>
               </p>
               <ul class="card-tags">
                 <li>ASR/TTS</li>
-                <li>Java</li>
-                <li>Cloud Voice</li>
+                <li>Dialog System</li>
+                <li>PaaS</li>
+                <li>Realtime</li>
               </ul>
-              <div class="card-actions">
-                <a class="card-link" href="#contact">
-                  <span class="lang lang-zh">交流项目</span>
-                  <span class="lang lang-en">Let’s Talk</span>
-                </a>
-              </div>
             </article>
           </div>
         </section>
-        <section id="experience" class="section">
+        <section id="experience" class="section reveal">
           <div class="section-header">
-            <span class="section-kicker">
-              <span class="lang lang-zh">经历</span>
-              <span class="lang lang-en">Experience</span>
-            </span>
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">经历</span>
+                <span class="lang lang-en">Experience</span>
+              </span>
+            </div>
             <h2>
               <span class="lang lang-zh">经历片段</span>
               <span class="lang lang-en">Career Snapshot</span>
             </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">一条从搜索后端、语音 PaaS、机器学习平台到企业级 Agent 平台的连续技术路径。</span>
+              <span class="lang lang-en lang-block">A continuous technical arc — search infrastructure, voice PaaS, ML platforms, and now enterprise agent platforms.</span>
+            </p>
           </div>
           <div class="timeline">
+            <article class="timeline-item timeline-item--active">
+              <div class="timeline-meta">
+                <span class="timeline-period">2023.06 — Now</span>
+                <span class="timeline-location">
+                  <span class="lang lang-zh">腾讯云 · 北京</span>
+                  <span class="lang lang-en">Tencent Cloud · Beijing</span>
+                </span>
+                <span class="timeline-now">
+                  <span class="lang lang-zh">现任</span>
+                  <span class="lang lang-en">Now</span>
+                </span>
+              </div>
+              <h3 class="timeline-title">
+                <span>
+                  <span class="lang lang-zh">后台开发高级工程师</span>
+                  <span class="lang lang-en">Senior Backend Engineer</span>
+                </span>
+                <span class="timeline-level">T11</span>
+              </h3>
+              <p>
+                <span class="lang lang-zh lang-block">智能体开发平台（ADP）Agent 方向负责人。任职期间承担三段递进角色：2023.06–2023.12 负责对话平台中心智能电话外呼机器人产品；2023.12–2024.12 担任 ADP RAG 方向负责人，同时主导会话运行时入口模块；2024.12 起转 Agent 方向负责人，主导前沿 Agent 技术的探索与规模化落地。</span>
+                <span class="lang lang-en lang-block">Agent Track Lead at the Agent Development Platform (ADP). Three progressive roles since joining: 2023.06–2023.12, owned the intelligent outbound voice bot at the Conversational Platform Center; 2023.12–2024.12, led the RAG track at ADP and owned the conversational runtime entry module; from 2024.12, lead the Agent track, driving frontier agent technology from exploration to scaled deployment.</span>
+              </p>
+              <p>
+                <span class="lang lang-zh lang-block">在 Agent 方向主导三项核心架构能力：基于代理网关层的 MCP 泛化治理（本地工具云化、会话与进程的强绑定、多协议统一入口）、执行与观测分离的可控沙箱（One Task One Pod、实时视觉透传）、端云协同的协议适配层（多端协议归一、状态快照中断/恢复）。配套推进会话运行时核心模块重构，使核心复杂度下降逾 50%、Agent 上线至今保持 0 故障。</span>
+                <span class="lang lang-en lang-block">Architected three core capabilities in the Agent track: proxy-gateway-based MCP governance (cloud-hosted local tools, session-to-process binding, unified multi-protocol entry); a controlled sandbox with separated execution and observation (One Task One Pod, real-time visual streaming); and an end-cloud protocol-adaptation layer (multi-device protocol unification, state-snapshot interruption and resume). Drove parallel refactoring of the conversational runtime core — cutting core-module complexity by over 50% and maintaining zero production incidents since the agent launch.</span>
+              </p>
+            </article>
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-period">2023.06 → 至今</span>
+                <span class="timeline-period">2020.08 — 2023.01</span>
                 <span class="timeline-location">
                   <span class="lang lang-zh">腾讯云 · 北京</span>
                   <span class="lang lang-en">Tencent Cloud · Beijing</span>
                 </span>
               </div>
               <h3 class="timeline-title">
-                <span class="lang lang-zh">后台开发高级工程师 (T11)</span>
-                <span class="lang lang-en">Senior Backend Engineer (T11)</span>
-              </h3>
-              <p>
-                <span class="lang lang-zh lang-block">企点电话机器人与智能助手 Owner，打造 RAG、Agent、MCP、云沙盒等基础能力，多次重构会话运行时并完善多模态问答与实时文档解析。</span>
-                <span class="lang lang-en lang-block">Owner of Qidian voice bots and intelligent assistant capabilities, building RAG, agent, MCP, and cloud sandbox foundations, leading multiple runtime refactors, and enhancing multimodal QA and real-time document parsing.</span>
-              </p>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-meta">
-                <span class="timeline-period">2020.08 → 2023.01</span>
-                <span class="timeline-location">
-                  <span class="lang lang-zh">腾讯云 · 北京</span>
-                  <span class="lang lang-en">Tencent Cloud · Beijing</span>
+                <span>
+                  <span class="lang lang-zh">后台开发高级工程师</span>
+                  <span class="lang lang-en">Senior Backend Engineer</span>
                 </span>
-              </div>
-              <h3 class="timeline-title">
-                <span class="lang lang-zh">后台开发高级工程师 (T10)</span>
-                <span class="lang lang-en">Senior Backend Engineer (T10)</span>
+                <span class="timeline-level">T10</span>
               </h3>
               <p>
-                <span class="lang lang-zh lang-block">负责智能核保 CII 产品与机器学习平台 TI-ONE，覆盖任务建模、离线跑批、可视化建模及后付费计费体系，推动多个行业客户上线。</span>
-                <span class="lang lang-en lang-block">Led the CII underwriting product and TI-ONE ML platform, spanning task modeling, offline pipelines, visual modeling, and postpaid billing to launch solutions for multiple industries.</span>
+                <span class="lang lang-zh lang-block">两阶段工作：2020.08–2021.10 负责 NLP 原子能力建设与智能核保产品的研发与交付；2021.10–2023.01 主导 TI-ONE 机器学习平台的任务建模、可视化工作流、离线跑批与后付费计费体系建设。此阶段沉淀了 AI 平台的核心工程抽象——任务、工作流、租户、计费——构成了后续 Agent Runtime 与多租户能力建设的基础。</span>
+                <span class="lang lang-en lang-block">Two phases of work: 2020.08–2021.10, owned NLP atomic capabilities and delivered an intelligent insurance underwriting product; 2021.10–2023.01, led task modeling, visual workflows, offline scheduling, and postpaid billing for the TI-ONE ML platform. This phase established the core engineering abstractions of AI platforms — tasks, workflows, tenancy, billing — forming the foundation for subsequent work on agent runtimes and multi-tenant capabilities.</span>
               </p>
             </article>
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-period">2018.07 → 2020.07</span>
+                <span class="timeline-period">2018.07 — 2020.07</span>
                 <span class="timeline-location">
                   <span class="lang lang-zh">百度云智能客服部 · 北京</span>
                   <span class="lang lang-en">Baidu Cloud Intelligent Service · Beijing</span>
                 </span>
               </div>
               <h3 class="timeline-title">
-                <span class="lang lang-zh">资深工程师 (T6)</span>
-                <span class="lang lang-en">Senior Engineer (T6)</span>
+                <span>
+                  <span class="lang lang-zh">资深工程师</span>
+                  <span class="lang lang-en">Senior Engineer</span>
+                </span>
+                <span class="timeline-level">T6</span>
               </h3>
               <p>
-                <span class="lang lang-zh lang-block">主导语音产品 ASR/TTS 的 PaaS 化和智能外呼落地，优化打断、静默、缓存策略，输出多项专利并支撑多个私有化项目。</span>
-                <span class="lang lang-en lang-block">Drove PaaS delivery of ASR/TTS products and intelligent outbound calling, optimizing interruption, silence, and caching strategies, securing several patents and private deployments.</span>
+                <span class="lang lang-zh lang-block">主导 ASR/TTS 语音产品的 PaaS 化与智能外呼平台建设：专注打断策略、静默检测、TTS 缓存与 MRCP 升级等核心技术，产出多项发明专利并支撑多个私有化交付项目。系统性建立了对话系统、实时交互与企业语音的端到端工程能力，可直接复用于当前的多模态 Agent 与实时交互场景。</span>
+                <span class="lang lang-en lang-block">Led the PaaS transformation of ASR/TTS products and the launch of the outbound voice platform — specializing in interruption strategies, silence detection, TTS caching, and MRCP upgrades, with multiple invention patents and on-premise deployments. Established end-to-end engineering capability across dialog systems, real-time interaction, and enterprise voice — directly transferable to current work on multimodal agents and real-time interaction scenarios.</span>
               </p>
             </article>
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-period">2015.03 → 2018.06</span>
+                <span class="timeline-period">2015.03 — 2018.06</span>
                 <span class="timeline-location">
                   <span class="lang lang-zh">自主创业 · 北京</span>
                   <span class="lang lang-en">Entrepreneurship · Beijing</span>
@@ -304,57 +631,143 @@
                 <span class="lang lang-en">Technical Lead</span>
               </h3>
               <p>
-                <span class="lang lang-zh lang-block">负责九又 VR 一体机与 MedSpace 医学影像系统研发，完整覆盖硬件到软件交付，产品获得央视报道并落地多家三甲医院。</span>
-                <span class="lang lang-en lang-block">Led development of the Jiuyou VR headset and MedSpace medical imaging system, spanning hardware and software delivery, earning CCTV coverage and adoption in leading hospitals.</span>
+                <span class="lang lang-zh lang-block">主导九又 VR 一体机与 MedSpace 医学影像系统的研发，覆盖硬件、固件、系统软件、上层应用与商业化交付的完整技术链路；产品获央视报道，部署于多家三甲医院。一次完整的"从 0 到 1 构建复杂系统并交付企业客户"的实践经历，奠定了后续平台化产品工作的方法基础。</span>
+                <span class="lang lang-en lang-block">Led R&D for the Jiuyou VR headset and the MedSpace medical imaging system, spanning hardware, firmware, system software, applications, and commercial delivery; the work was featured on CCTV and deployed at multiple top-tier hospitals. Taking a complex system from zero to enterprise delivery established the methodological foundation for the platform-building work that followed.</span>
               </p>
             </article>
             <article class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-period">2014.01 → 2015.03</span>
+                <span class="timeline-period">2014.01 — 2015.03</span>
                 <span class="timeline-location">
                   <span class="lang lang-zh">百度移动搜索部 · 北京</span>
                   <span class="lang lang-en">Baidu Mobile Search · Beijing</span>
                 </span>
               </div>
               <h3 class="timeline-title">
-                <span class="lang lang-zh">数据挖掘工程师 (T4)</span>
-                <span class="lang lang-en">Data Mining Engineer (T4)</span>
+                <span>
+                  <span class="lang lang-zh">数据挖掘工程师</span>
+                  <span class="lang lang-en">Data Mining Engineer</span>
+                </span>
+                <span class="timeline-level">T4</span>
               </h3>
               <p>
-                <span class="lang lang-zh lang-block">负责轻应用检索后端的数据策略，优化召回、排序与赋权流程，熟悉 Linux/Hadoop 与 C++ 工程体系，荣获 2014 年 Q3 最佳新人。</span>
-                <span class="lang lang-en lang-block">Owned data strategies for light-app search backend, improving recall, ranking, and weighting while mastering Linux, Hadoop, and C++, earning the 2014 Q3 Best Newcomer award.</span>
+                <span class="lang lang-zh lang-block">负责轻应用检索后端的数据策略，参与召回、排序与赋权全流程优化，基于 Linux / Hadoop / C++ 工程体系开展工作，获 2014 年 Q3 最佳新人奖。检索与排序的底层经验是当前 RAG 与混合检索能力建设的技术基础。</span>
+                <span class="lang lang-en lang-block">Owned data strategies for the light-app search backend, contributing across recall, ranking, and weighting on a Linux / Hadoop / C++ stack; recipient of the 2014 Q3 Best Newcomer award. The retrieval and ranking foundations from this period directly inform current work on RAG and hybrid retrieval.</span>
               </p>
             </article>
           </div>
         </section>
-        <section id="patents" class="section">
+        <section id="awards" class="section reveal">
           <div class="section-header">
-            <span class="section-kicker">
-              <span class="lang lang-zh">专利</span>
-              <span class="lang lang-en">Patents</span>
-            </span>
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">荣誉</span>
+                <span class="lang lang-en">Awards</span>
+              </span>
+            </div>
             <h2>
-              <span class="lang lang-zh">专利与知识产权</span>
-              <span class="lang lang-en">Patents & IP</span>
+              <span class="lang lang-zh">荣誉与认可</span>
+              <span class="lang lang-en">Awards &amp; Recognition</span>
             </h2>
             <p class="section-description">
-              <span class="lang lang-zh lang-block">覆盖语音交互、信息中断处理与智能家居通信拦截的多项专利，已在 Google Patents 公开或授权，支撑智能客服与云端语音场景落地。</span>
-              <span class="lang lang-en lang-block">A selection of patents spanning voice interaction, interruption handling, and smart-home communication interception—published or granted on Google Patents to support intelligent service scenarios.</span>
+              <span class="lang lang-zh lang-block">部分在腾讯期间获得的内部奖项与业务认可。</span>
+              <span class="lang lang-en lang-block">Selected internal awards and recognition during my time at Tencent.</span>
+            </p>
+          </div>
+          <div class="awards-grid">
+            <article class="award-card">
+              <span class="award-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 14 7 21l5-3 5 3-1.5-7"/></svg>
+              </span>
+              <span class="award-period">2024 H2</span>
+              <h3 class="award-title">
+                <span class="lang lang-zh">中心研发大师奖</span>
+                <span class="lang lang-en">Engineering Master Award</span>
+              </h3>
+              <p class="award-note">
+                <span class="lang lang-zh">智能体平台产品中心</span>
+                <span class="lang lang-en">Agent Platform Product Center</span>
+              </p>
+            </article>
+            <article class="award-card">
+              <span class="award-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 8 8H3l4 5-2 7 7-4 7 4-2-7 4-5h-5z"/></svg>
+              </span>
+              <span class="award-period">2024 H1 · 2025 H1</span>
+              <h3 class="award-title">
+                <span class="lang lang-zh">Outstanding Contributor ×2</span>
+                <span class="lang lang-en">Outstanding Contributor ×2</span>
+              </h3>
+              <p class="award-note">
+                <span class="lang lang-zh">连续两个半年度</span>
+                <span class="lang lang-en">Two consecutive half-year cycles</span>
+              </p>
+            </article>
+            <article class="award-card">
+              <span class="award-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M5 6l2 2M19 6l-2 2M3 12h3M18 12h3M7 21h10M10 17l2-3 2 3"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+              <span class="award-period">2025 Q2</span>
+              <h3 class="award-title">
+                <span class="lang lang-zh">云智能 Agent 创意奖</span>
+                <span class="lang lang-en">Cloud Intelligence · Agent Innovation Award</span>
+              </h3>
+              <p class="award-note">
+                <span class="lang lang-zh">Agent 方向创新探索</span>
+                <span class="lang lang-en">Agent track innovation</span>
+              </p>
+            </article>
+            <article class="award-card award-card--featured">
+              <span class="award-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <span class="award-period">
+                <span class="lang lang-zh">事业群级</span>
+                <span class="lang lang-en">Business-Group level</span>
+              </span>
+              <h3 class="award-title">
+                <span class="lang lang-zh">BG 技术影响力项目奖</span>
+                <span class="lang lang-en">Business-Group Technical Impact Award</span>
+              </h3>
+              <p class="award-note">
+                <span class="lang lang-zh">ADP RAG &amp; Agent 能力</span>
+                <span class="lang lang-en">ADP RAG &amp; Agent capability</span>
+              </p>
+            </article>
+          </div>
+        </section>
+        <section id="patents" class="section reveal">
+          <div class="section-header">
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">专利</span>
+                <span class="lang lang-en">Patents</span>
+              </span>
+            </div>
+            <h2>
+              <span class="lang lang-zh">专利与知识产权</span>
+              <span class="lang lang-en">Patents &amp; IP</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">覆盖语音交互、信息中断处理与智能家居通信拦截的多项专利；以下状态已按 Google Patents 当前法律事件更新，包含审查中与已授权项目。</span>
+              <span class="lang lang-en lang-block">A selection of patents spanning voice interaction, interruption handling, and smart-home communication interception, updated against current Google Patents legal events and covering both pending and granted cases.</span>
             </p>
           </div>
           <div class="patent-list">
             <article class="patent-card">
               <div class="patent-meta">
                 <span class="patent-number">CN110427460A</span>
-                <span class="patent-date">
-                  <span class="lang lang-zh">公开：2019-11-08 · 申请：2019-08-06</span>
-                  <span class="lang lang-en">Published: 2019-11-08 · Filed: 2019-08-06</span>
-                </span>
                 <span class="patent-status">
-                  <span class="lang lang-zh">状态：公开</span>
-                  <span class="lang lang-en">Status: Published</span>
+                  <span class="lang lang-zh">审查中</span>
+                  <span class="lang lang-en">Pending</span>
                 </span>
               </div>
+              <p class="patent-date">
+                <span class="lang lang-zh">公开 2019-11-08 · 实审 2022-06-24</span>
+                <span class="lang lang-en">Published 2019-11-08 · Examination 2022-06-24</span>
+              </p>
               <h3 class="patent-title">
                 <span class="lang lang-zh">用于交互信息的方法及装置</span>
                 <span class="lang lang-en">Method and Device for Interactive Information</span>
@@ -372,16 +785,16 @@
             </article>
             <article class="patent-card">
               <div class="patent-meta">
-                <span class="patent-number">CN110457437A</span>
-                <span class="patent-date">
-                  <span class="lang lang-zh">公开：2019-11-15 · 申请：2019-08-06</span>
-                  <span class="lang lang-en">Published: 2019-11-15 · Filed: 2019-08-06</span>
-                </span>
-                <span class="patent-status">
-                  <span class="lang lang-zh">状态：公开</span>
-                  <span class="lang lang-en">Status: Published</span>
+                <span class="patent-number">CN110457437B</span>
+                <span class="patent-status patent-status--granted">
+                  <span class="lang lang-zh">已授权</span>
+                  <span class="lang lang-en">Granted</span>
                 </span>
               </div>
+              <p class="patent-date">
+                <span class="lang lang-zh">授权 2025-12-30 · 申请 2019-08-06</span>
+                <span class="lang lang-en">Granted 2025-12-30 · Filed 2019-08-06</span>
+              </p>
               <h3 class="patent-title">
                 <span class="lang lang-zh">用于交互信息的方法及装置</span>
                 <span class="lang lang-en">Method and Device for Interactive Information</span>
@@ -391,7 +804,7 @@
                 <span class="lang lang-en lang-block">Monitors playback duration and wait thresholds to trigger the next message or reminders, ensuring timely and accurate conversational responses.</span>
               </p>
               <div class="patent-links">
-                <a class="patent-link" href="https://patents.google.com/patent/CN110457437A/zh" target="_blank" rel="noreferrer">
+                <a class="patent-link" href="https://patents.google.com/patent/CN110457437B/zh" target="_blank" rel="noreferrer">
                   <span class="lang lang-zh">查看详情</span>
                   <span class="lang lang-en">View Patent</span>
                 </a>
@@ -400,15 +813,15 @@
             <article class="patent-card">
               <div class="patent-meta">
                 <span class="patent-number">CN111599341B</span>
-                <span class="patent-date">
-                  <span class="lang lang-zh">授权：2023-06-20 · 申请：2020-05-13</span>
-                  <span class="lang lang-en">Granted: 2023-06-20 · Filed: 2020-05-13</span>
-                </span>
                 <span class="patent-status patent-status--granted">
-                  <span class="lang lang-zh">状态：已授权</span>
-                  <span class="lang lang-en">Status: Granted</span>
+                  <span class="lang lang-zh">已授权</span>
+                  <span class="lang lang-en">Granted</span>
                 </span>
               </div>
+              <p class="patent-date">
+                <span class="lang lang-zh">授权 2023-06-20 · 申请 2020-05-13</span>
+                <span class="lang lang-en">Granted 2023-06-20 · Filed 2020-05-13</span>
+              </p>
               <h3 class="patent-title">
                 <span class="lang lang-zh">用于生成语音的方法和装置</span>
                 <span class="lang lang-en">Method and Device for Generating Speech</span>
@@ -427,15 +840,15 @@
             <article class="patent-card">
               <div class="patent-meta">
                 <span class="patent-number">CN110896427B</span>
-                <span class="patent-date">
-                  <span class="lang lang-zh">授权：2025-06-17 · 申请：2019-10-09</span>
-                  <span class="lang lang-en">Granted: 2025-06-17 · Filed: 2019-10-09</span>
-                </span>
                 <span class="patent-status patent-status--granted">
-                  <span class="lang lang-zh">状态：已授权</span>
-                  <span class="lang lang-en">Status: Granted</span>
+                  <span class="lang lang-zh">已授权</span>
+                  <span class="lang lang-en">Granted</span>
                 </span>
               </div>
+              <p class="patent-date">
+                <span class="lang lang-zh">授权 2025-06-17 · 申请 2019-10-09</span>
+                <span class="lang lang-en">Granted 2025-06-17 · Filed 2019-10-09</span>
+              </p>
               <h3 class="patent-title">
                 <span class="lang lang-zh">通信拦截的处理方法、装置、电子设备及可读存储介质</span>
                 <span class="lang lang-en">Communication Interception Handling Method and Device</span>
@@ -453,12 +866,119 @@
             </article>
           </div>
         </section>
-        <section id="education" class="section">
+        <section id="impact" class="section reveal">
           <div class="section-header">
-            <span class="section-kicker">
-              <span class="lang lang-zh">教育</span>
-              <span class="lang lang-en">Education</span>
-            </span>
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">影响力</span>
+                <span class="lang lang-en">Impact</span>
+              </span>
+            </div>
+            <h2>
+              <span class="lang lang-zh">专业影响力</span>
+              <span class="lang lang-en">Professional Impact</span>
+            </h2>
+            <p class="section-description">
+              <span class="lang lang-zh lang-block">技术分享、知识沉淀与团队培养，是平台工程之外同等重要的工作。</span>
+              <span class="lang lang-en lang-block">Technical sharing, knowledge curation, and mentorship — work I consider as load-bearing as the platforms themselves.</span>
+            </p>
+          </div>
+          <div class="impact-grid">
+            <article class="impact-card">
+              <span class="impact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h13a2 2 0 0 1 2 2v12L13 16H3z"/><path d="M7 9h7M7 12h5"/><circle cx="19" cy="6" r="2"/></svg>
+              </span>
+              <h3 class="impact-title">
+                <span class="lang lang-zh">技术分享</span>
+                <span class="lang lang-en">Tech Talks</span>
+              </h3>
+              <ul class="impact-list">
+                <li>
+                  <span class="lang lang-zh">《大模型微调》· 组内</span>
+                  <span class="lang lang-en">"LLM Fine-tuning" · team-level</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">《RAG Pipeline 设计》· 中心内</span>
+                  <span class="lang lang-en">"RAG Pipeline Design" · center-level</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">《AI 提效实践经验》· 云智能 BU</span>
+                  <span class="lang lang-en">"AI-Native Engineering" · Cloud Intelligence BU</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">《Vibe Coding 实战》· 中心内</span>
+                  <span class="lang lang-en">"Vibe Coding in Practice" · center-level</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">前沿技术调研：MCP · AI Python · Agent 沙盒</span>
+                  <span class="lang lang-en">Frontier research: MCP · AI Python · Agent Sandbox</span>
+                </li>
+              </ul>
+            </article>
+            <article class="impact-card">
+              <span class="impact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+              </span>
+              <h3 class="impact-title">
+                <span class="lang lang-zh">知识沉淀</span>
+                <span class="lang lang-en">Publications</span>
+              </h3>
+              <ul class="impact-list">
+                <li>
+                  <a href="https://juejin.cn/user/1549637549819545" target="_blank" rel="noreferrer" class="impact-link">
+                    <span class="lang lang-zh">掘金技术博客 · 多篇推荐首页</span>
+                    <span class="lang lang-en">Juejin tech blog · multiple homepage features</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="lang lang-zh">内部技术博客 8 篇原创 · 2 次热榜 · 1 次官方推荐</span>
+                  <span class="lang lang-en">8 original internal posts · 2× featured · 1× editor pick</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">累计 35 次点赞 · 影响力分超 80% 同事</span>
+                  <span class="lang lang-en">35 peer upvotes · top-quintile influence score</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">单篇峰值：近 3K 浏览 · 37 收藏 · 20 顶</span>
+                  <span class="lang lang-en">Top post: ~3K views · 37 saves · 20 upvotes</span>
+                </li>
+              </ul>
+            </article>
+            <article class="impact-card">
+              <span class="impact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="6" r="2.5"/><path d="M14 13c2-1 5-1 7 0"/></svg>
+              </span>
+              <h3 class="impact-title">
+                <span class="lang lang-zh">团队培养</span>
+                <span class="lang lang-en">Mentorship</span>
+              </h3>
+              <ul class="impact-list">
+                <li>
+                  <span class="lang lang-zh">2 名实习生 · 均获 SP Offer</span>
+                  <span class="lang lang-en">2 interns · both received SP offers</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">2 名社招/校招同事 · 均获五星绩效</span>
+                  <span class="lang lang-en">2 hires · both reached top-tier performance</span>
+                </li>
+                <li>
+                  <span class="lang lang-zh">推动团队 AI 提效方法论落地</span>
+                  <span class="lang lang-en">Drove team-wide AI-native workflow adoption</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section id="education" class="section reveal">
+          <div class="section-header">
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">教育</span>
+                <span class="lang lang-en">Education</span>
+              </span>
+            </div>
             <h2>
               <span class="lang lang-zh">教育经历</span>
               <span class="lang lang-en">Education</span>
@@ -467,7 +987,7 @@
           <div class="education-list">
             <article class="education-item">
               <div class="education-meta">
-                <span class="education-period">2011.09 → 2014.01</span>
+                <span class="education-period">2011.09 — 2014.01</span>
                 <span class="education-location">
                   <span class="lang lang-zh">哈尔滨工业大学 · 硕士</span>
                   <span class="lang lang-en">Harbin Institute of Technology · M.S.</span>
@@ -480,7 +1000,7 @@
             </article>
             <article class="education-item">
               <div class="education-meta">
-                <span class="education-period">2007.09 → 2011.07</span>
+                <span class="education-period">2007.09 — 2011.07</span>
                 <span class="education-location">
                   <span class="lang lang-zh">哈尔滨工业大学 · 本科</span>
                   <span class="lang lang-en">Harbin Institute of Technology · B.S.</span>
@@ -498,34 +1018,40 @@
                   <span class="lang lang-en">2023</span>
                 </span>
                 <span class="education-location">
-                  <span class="lang lang-zh">PMI-ACP</span>
+                  <span class="lang lang-zh">PMI-ACP 认证</span>
                   <span class="lang lang-en">PMI-ACP</span>
                 </span>
               </div>
               <p>
-                <span class="lang lang-zh lang-block">调休期间系统学习敏捷项目管理并通过 PMI-ACP 认证，持续打磨跨团队协作与交付效率。</span>
-                <span class="lang lang-en lang-block">Completed PMI-ACP certification while rejoining Tencent, deepening agile project management skills and cross-team delivery efficiency.</span>
+                <span class="lang lang-zh lang-block">于调休期内系统学习敏捷项目管理并通过 PMI-ACP 认证，持续提升跨团队协作与交付效率。</span>
+                <span class="lang lang-en lang-block">Completed the PMI-ACP certification during scheduled leave, strengthening agile project management and cross-team delivery practices.</span>
               </p>
             </article>
           </div>
         </section>
-        <section id="contact" class="section">
+        <section id="contact" class="section reveal">
           <div class="section-header">
-            <span class="section-kicker">
-              <span class="lang lang-zh">联系</span>
-              <span class="lang lang-en">Contact</span>
-            </span>
+            <div class="section-marker">
+              <span class="section-marker-line"></span>
+              <span class="section-kicker">
+                <span class="lang lang-zh">联系</span>
+                <span class="lang lang-en">Contact</span>
+              </span>
+            </div>
             <h2>
               <span class="lang lang-zh">保持联系</span>
               <span class="lang lang-en">Stay in Touch</span>
             </h2>
             <p class="section-description">
-              <span class="lang lang-zh lang-block">欢迎聊聊项目合作、职业机会或任何有趣的问题。</span>
-              <span class="lang lang-en lang-block">Let’s discuss collaborations, opportunities, or anything interesting.</span>
+              <span class="lang lang-zh lang-block">欢迎就 Agent 平台、大模型应用工程化、技术合作及相关议题进行交流。</span>
+              <span class="lang lang-en lang-block">Open to discussions on agent platforms, LLM application engineering, technical collaboration, and related topics.</span>
             </p>
           </div>
           <div class="contact-panel">
             <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>
+              </span>
               <h3>
                 <span class="lang lang-zh">邮箱</span>
                 <span class="lang lang-en">Email</span>
@@ -533,10 +1059,16 @@
               <a href="mailto:vipgss@gmail.com">vipgss@gmail.com</a>
             </div>
             <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.63 22.41c.58.1.79-.25.79-.56v-2.02c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.18-3.08-.12-.3-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.5 3.17-1.18 3.17-1.18.62 1.58.23 2.74.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.79.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+              </span>
               <h3>GitHub</h3>
               <a href="https://github.com/guanshan" target="_blank" rel="noreferrer">@guanshan</a>
             </div>
             <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              </span>
               <h3>
                 <span class="lang lang-zh">所在地</span>
                 <span class="lang lang-en">Location</span>
@@ -551,11 +1083,16 @@
       </main>
       <footer class="page-footer">
         <p>
-          <span class="lang lang-zh">© <span data-year></span> 官山山 · 设计用于 GitHub Pages。</span>
-          <span class="lang lang-en">© <span data-year></span> Guanshan · Designed for GitHub Pages.</span>
+          <span class="lang lang-zh">© <span data-year></span> 官山山 · 自主设计与开发，托管于 GitHub Pages。</span>
+          <span class="lang lang-en">© <span data-year></span> Guanshan · Designed and built independently, hosted on GitHub Pages.</span>
         </p>
       </footer>
     </div>
-    <script src="javascripts/main.js?v=20250210" type="module"></script>
+    <button class="back-to-top" type="button" data-back-to-top aria-label="回到顶部">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m6 14 6-6 6 6"/>
+      </svg>
+    </button>
+    <script src="javascripts/main.js?v=20260511c" type="module"></script>
   </body>
 </html>

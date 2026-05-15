@@ -1,42 +1,51 @@
 # Guanshan.github.com
 
-官山山的个人主页源码，部署在 `guanshan.github.io`。页面以纯静态 HTML/CSS/JS 构建，提供中英双语内容和亮/暗主题切换。
+官山山的个人主页源码，部署在 `guanshan.github.io`。纯静态 HTML/CSS/JS，中英双语 + 亮/暗主题切换，无构建系统。
 
-## ✨ 主要特性
+## 文案与定位的唯一源头
 
-- 玻璃拟态风格的响应式布局，默认展示中文，支持一键切换到英文。
-- 主题开关支持系统偏好检测与 Shift 点击恢复跟随系统。
-- 主页涵盖简介、代表项目、经历、专利、教育与联系方式模块，可按需扩展。
-- 无后端依赖，仅使用 GitHub Pages 即可发布。
+**所有文案改动先改 [`BRAND.md`](BRAND.md)，再同步到 `index.html`。**
 
-## 🗂 目录结构
+BRAND.md 是这个站的品牌定位、Section 顺序、文案完整稿与架构演进建议。HTML 只是它的渲染层。
 
+## 目录结构
+
+```text
+index.html              # 页面结构与文案
+stylesheets/styles.css  # 视觉与布局
+javascripts/main.js     # 主题、语言切换、动态 title/description
+og-card.svg             # 社交分享卡片（1200×630）
+favicon.svg             # 站点图标
+params.json             # GitHub Pages 元数据
+BRAND.md                # 品牌主源文档（先改这里）
 ```
-index.html            # 页面结构与文案
-stylesheets/styles.css # 视觉样式与布局
-javascripts/main.js    # 主题与语言切换逻辑
-params.json            # GitHub Pages 生成器的保留文件（勿删）
-```
 
-旧版模板遗留的字体、图片已清理，仅保留当前所需资源。
+## 页面 Section
 
-## 🛠 自定义指南
+`Hero → About → Technical Thesis → Focus & Expertise → Featured Work → Career Snapshot → Patents → Education → Contact`
 
-1. **文案与链接**：直接编辑 [`index.html`](index.html) 中的对应段落，中文和英文各有一段。
-2. **样式调整**：在 [`stylesheets/styles.css`](stylesheets/styles.css) 中修改色板、阴影或布局变量。
-3. **交互逻辑**：若需改动主题/语言开关行为，请查看 [`javascripts/main.js`](javascripts/main.js)。
-4. **新增模块**：复制现有 `<section>` 结构并补齐 `.lang-zh` / `.lang-en` 文案即可。
-5. **缓存提示**：更新静态资源后记得调整 `index.html` 中的 `?v=` 版本号，以便强制刷新线上缓存。
+Section 顺序与意图的说明详见 [`BRAND.md`](BRAND.md)。
 
-## 🚀 部署
+## 自定义指南
 
-将改动提交并推送到 `master`（或仓库配置的发布分支），GitHub Pages 会自动构建并更新站点。首次发布可能需要数分钟生效。
+1. **改文案**：先编辑 [`BRAND.md`](BRAND.md)，再同步到 [`index.html`](index.html)。每段都有 `.lang-zh` 与 `.lang-en` 两份。
+2. **改样式**：编辑 [`stylesheets/styles.css`](stylesheets/styles.css)；色板与圆角等变量集中在文件顶部。
+3. **改交互**：[`javascripts/main.js`](javascripts/main.js) 处理主题、语言切换、动态 `<title>` 与 `<meta description>`。
+4. **新增 Section**：复制现有 `<section class="section">` 结构，补齐双语 span，必要时为新组件添加 class。
+5. **资源缓存**：更新静态资源后调整 `index.html` 中 `?v=` 版本号以强制刷新 CDN。
 
-## ✅ 建议检查项
+## 部署
 
-- 替换代表项目、经历、专利等区块的占位内容。
-- 更新联系方式（邮箱、GitHub、所在地等）。
-- 确认中英双语文案同步且语义准确。
-- 部署后强制刷新浏览器缓存（例如 `⌘⇧R` 或 `Ctrl+F5`）核对外观。
+推送到 `master`（或 GitHub Pages 配置的发布分支），自动构建。首次发布几分钟内生效。
 
-欢迎继续扩展这个页面，让它展示更多你想分享的内容。💡
+## 已落地的优化
+
+- 顶部锚点导航 + 平滑滚动
+- Open Graph / Twitter Card 社交卡片（`og-card.svg`）
+- `<title>` 与 `<meta description>` 跟随语言切换动态更新
+- 可访问性：`aria-label`、skip-to-content、`prefers-reduced-motion`
+
+## 后续可选演进
+
+- 文案抽到 JSON、HTML 仅保留骨架（详见 [`BRAND.md`](BRAND.md) 的 Tier 1 建议）
+- 若要加博客或多页面再考虑 SSG（11ty / Astro）

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="80" width="56" height="3" fill="#60a5fa"/>
+  <text x="80" y="160" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#60a5fa" letter-spacing="5" font-weight="600">ENTERPRISE AGENT PLATFORM · LLM APPLICATION ENGINEERING</text>
+  <text x="80" y="290" font-family="Inter, system-ui, sans-serif" font-size="68" fill="#f8fafc" font-weight="700" letter-spacing="-1">官山山 · Guanshan</text>
+  <text x="80" y="360" font-family="Inter, system-ui, sans-serif" font-size="32" fill="#cbd5e1" font-weight="500">Senior Backend Engineer at Tencent Cloud</text>
+  <text x="80" y="490" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#94a3b8" font-style="italic">“Don't thin the model call. Thicken the engineering underneath.”</text>
+  <text x="80" y="540" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#64748b" letter-spacing="2">guanshan.github.io</text>
+</svg>
